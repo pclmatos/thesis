@@ -1,0 +1,886 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{consistency-models}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e4fe5791de203ee29aff115cf0f7b928}{%
+           family={Aldin},
+           familyi={A\bibinitperiod},
+           given={Hesam\bibnamedelimb Nejati\bibnamedelima Sharif},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7e4a3f246b1c3519ab8698300c20f405}{%
+           family={Deldari},
+           familyi={D\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7df47bdcd8d56e486c736a0cdc81d6e6}{%
+           family={Moattar},
+           familyi={M\bibinitperiod},
+           given={Mohammad\bibnamedelima Hossein},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7bb4a1e1fd8ab018e31ef48fc945ee59}{%
+           family={Ghods},
+           familyi={G\bibinitperiod},
+           given={Mostafa\bibnamedelima Razavi},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf91639a4b9a5631b0f8db5489673876}
+      \strng{fullhash}{18aa052c88b14be30487a224cbc58c9e}
+      \strng{bibnamehash}{cf91639a4b9a5631b0f8db5489673876}
+      \strng{authorbibnamehash}{cf91639a4b9a5631b0f8db5489673876}
+      \strng{authornamehash}{cf91639a4b9a5631b0f8db5489673876}
+      \strng{authorfullhash}{18aa052c88b14be30487a224cbc58c9e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Consistency models in distributed systems: {A} survey on definitions, disciplines, challenges and applications}
+      \field{volume}{abs/1902.03305}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1902.03305
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1902.03305
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1902.03305
+      \endverb
+    \endentry
+    \entry{consistency-in-distributed-systems}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ac736996e5adb99fb815536ffee92db5}{%
+           family={Bermbach},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=28f3aeeca0c5122a9bd815bd24acee4c}{%
+           family={Kuhlenkamp},
+           familyi={K\bibinitperiod},
+           given={Jörn},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=8a9a8837770437a9372f3b9305dde727}{%
+           family={Gramoli},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6d84b5e8da24c645eb6bc438af7621c4}{%
+           family={Guerraoui},
+           familyi={G\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2554631a0cc632c4f5a350b0c0b95d5c}
+      \strng{fullhash}{2554631a0cc632c4f5a350b0c0b95d5c}
+      \strng{bibnamehash}{2554631a0cc632c4f5a350b0c0b95d5c}
+      \strng{authorbibnamehash}{2554631a0cc632c4f5a350b0c0b95d5c}
+      \strng{authornamehash}{2554631a0cc632c4f5a350b0c0b95d5c}
+      \strng{authorfullhash}{2554631a0cc632c4f5a350b0c0b95d5c}
+      \strng{editorbibnamehash}{9d5db8988d4518777e8b4b045a3ae89b}
+      \strng{editornamehash}{9d5db8988d4518777e8b4b045a3ae89b}
+      \strng{editorfullhash}{9d5db8988d4518777e8b4b045a3ae89b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Networked Systems - First International Conference, {NETYS} 2013, Marrakech, Morocco, May 2-4, 2013, Revised Selected Papers}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Consistency in Distributed Storage Systems - An Overview of Models, Metrics and Measurement Approaches}
+      \field{volume}{7853}
+      \field{year}{2013}
+      \field{pages}{175\bibrangedash 189}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/978-3-642-40148-0\_13
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-642-40148-0\_13
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-642-40148-0%5C_13
+      \endverb
+    \endentry
+    \entry{towards-comprehensive-measurement-guarantees}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ac736996e5adb99fb815536ffee92db5}{%
+           family={Bermbach},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1f1b5a611871b013dd18b84a54bbb23f}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=80b2c0d16adb4ccde7a9eb8a7b731fea}{%
+           family={Sakr},
+           familyi={S\bibinitperiod},
+           given={Sherif},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=eda0c65e61d71da3d72b5185cafc56ae}{%
+           family={Nambiar},
+           familyi={N\bibinitperiod},
+           given={Raghunath},
+           giveni={R\bibinitperiod}}}%
+        {{hash=82c65f7a34b4f4e1b6af3ed791ee2f11}{%
+           family={Poess},
+           familyi={P\bibinitperiod},
+           given={Meikel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4e9b26f14541836f17e5d5674ab7650c}
+      \strng{fullhash}{4e9b26f14541836f17e5d5674ab7650c}
+      \strng{bibnamehash}{4e9b26f14541836f17e5d5674ab7650c}
+      \strng{authorbibnamehash}{4e9b26f14541836f17e5d5674ab7650c}
+      \strng{authornamehash}{4e9b26f14541836f17e5d5674ab7650c}
+      \strng{authorfullhash}{4e9b26f14541836f17e5d5674ab7650c}
+      \strng{editorbibnamehash}{16aa0479093bf0f4b000a20136e6484d}
+      \strng{editornamehash}{16aa0479093bf0f4b000a20136e6484d}
+      \strng{editorfullhash}{16aa0479093bf0f4b000a20136e6484d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Performance Characterization and Benchmarking - 5th {TPC} Technology Conference, {TPCTC} 2013, Trento, Italy, August 26, 2013, Revised Selected Papers}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Towards Comprehensive Measurement of Consistency Guarantees for Cloud-Hosted Data Storage Services}
+      \field{volume}{8391}
+      \field{year}{2013}
+      \field{pages}{32\bibrangedash 47}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-04936-6\_3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-319-04936-6\_3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-319-04936-6%5C_3
+      \endverb
+    \endentry
+    \entry{principles-of-eventual-consistency}{article}{}
+      \name{author}{1}{}{%
+        {{hash=712c7950a80e789733554d845d4a1056}{%
+           family={Burckhardt},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{712c7950a80e789733554d845d4a1056}
+      \strng{fullhash}{712c7950a80e789733554d845d4a1056}
+      \strng{bibnamehash}{712c7950a80e789733554d845d4a1056}
+      \strng{authorbibnamehash}{712c7950a80e789733554d845d4a1056}
+      \strng{authornamehash}{712c7950a80e789733554d845d4a1056}
+      \strng{authorfullhash}{712c7950a80e789733554d845d4a1056}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Found. Trends Program. Lang.}
+      \field{number}{1-2}
+      \field{title}{Principles of Eventual Consistency}
+      \field{volume}{1}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 150}
+      \range{pages}{150}
+      \verb{doi}
+      \verb 10.1561/2500000011
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1561/2500000011
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1561/2500000011
+      \endverb
+    \endentry
+    \entry{scribe}{article}{}
+      \name{author}{4}{}{%
+        {{hash=084730901e78fd30411e6af546d8540f}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fb43649db15953eb2164df87bc5034a3}{%
+           family={Druschel},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=43b428701b71e726f0f4000ea91297c8}{%
+           family={Kermarrec},
+           familyi={K\bibinitperiod},
+           given={Anne{-}Marie},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1431db8a0266f5e1420378350abca403}{%
+           family={Rowstron},
+           familyi={R\bibinitperiod},
+           given={Antony\bibnamedelimb I.\bibnamedelimi T.},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{451c98a879f9ff1352c361b704f4a465}
+      \strng{fullhash}{3a54fbbecd6149aad6742e6cda049e04}
+      \strng{bibnamehash}{451c98a879f9ff1352c361b704f4a465}
+      \strng{authorbibnamehash}{451c98a879f9ff1352c361b704f4a465}
+      \strng{authornamehash}{451c98a879f9ff1352c361b704f4a465}
+      \strng{authorfullhash}{3a54fbbecd6149aad6742e6cda049e04}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} J. Sel. Areas Commun.}
+      \field{number}{8}
+      \field{title}{Scribe: a large-scale and decentralized application-level multicast infrastructure}
+      \field{volume}{20}
+      \field{year}{2002}
+      \field{pages}{1489\bibrangedash 1499}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/JSAC.2002.803069
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/JSAC.2002.803069
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/JSAC.2002.803069
+      \endverb
+    \endentry
+    \entry{p2s}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=c445ed83247ae39043bd8a980964d594}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Tiancheng},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4d41844c3df15e28c30ad835c820f0f2}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Sisi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7148ac1bf4c5d6de52f17e5fc80c3682}{%
+           family={Meling},
+           familyi={M\bibinitperiod},
+           given={Hein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cafdd1a2d801ee59c2ec4b16dd109466}{%
+           family={Peisert},
+           familyi={P\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=80196af511c63950057ad75383243025}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Haibin},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=562c5e20345ebee054a59bf467c3a29a}{%
+           family={Bellur},
+           familyi={B\bibinitperiod},
+           given={Umesh},
+           giveni={U\bibinitperiod}}}%
+        {{hash=1debf411234b9cb4873a148d17db4e4b}{%
+           family={Kothari},
+           familyi={K\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{00c71a98ad0357abf04be666321f17b1}
+      \strng{fullhash}{cb4a95282b555eb96306a89a06423931}
+      \strng{bibnamehash}{00c71a98ad0357abf04be666321f17b1}
+      \strng{authorbibnamehash}{00c71a98ad0357abf04be666321f17b1}
+      \strng{authornamehash}{00c71a98ad0357abf04be666321f17b1}
+      \strng{authorfullhash}{cb4a95282b555eb96306a89a06423931}
+      \strng{editorbibnamehash}{a0dc805e392707f126a7fd592e539b3c}
+      \strng{editornamehash}{a0dc805e392707f126a7fd592e539b3c}
+      \strng{editorfullhash}{a0dc805e392707f126a7fd592e539b3c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The 8th {ACM} International Conference on Distributed Event-Based Systems, {DEBS} '14, Mumbai, India, May 26-29, 2014}
+      \field{title}{{P2S:} a fault-tolerant publish/subscribe infrastructure}
+      \field{year}{2014}
+      \field{pages}{189\bibrangedash 197}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/2611286.2611305
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2611286.2611305
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2611286.2611305
+      \endverb
+    \endentry
+    \entry{epidemic-algs-for-pubsub}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f1c14c0ca19e4cc3300e64955168d14f}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=da1f637aa6475c3bd5926c4954bedb08}{%
+           family={Migliavacca},
+           familyi={M\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d620f4adc6232b2b473645ce7fddf93}{%
+           family={Picco},
+           familyi={P\bibinitperiod},
+           given={Gian\bibnamedelima Pietro},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=44e80b9a48c397757a19a4ba5ae52484}{%
+           family={Cugola},
+           familyi={C\bibinitperiod},
+           given={Gianpaolo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IEEE} Computer Society}%
+      }
+      \strng{namehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{fullhash}{733517b0ec5f5dae486c0351c9a3a193}
+      \strng{bibnamehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{authorbibnamehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{authornamehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{authorfullhash}{733517b0ec5f5dae486c0351c9a3a193}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{24th International Conference on Distributed Computing Systems {(ICDCS)} 2004, 24-26 March 2004, Hachioji, Tokyo, Japan}
+      \field{title}{Epidemic Algorithms for Reliable Content-Based Publish-Subscribe: An Evaluation}
+      \field{year}{2004}
+      \field{pages}{552\bibrangedash 561}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICDCS.2004.1281622
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICDCS.2004.1281622
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICDCS.2004.1281622
+      \endverb
+    \endentry
+    \entry{intro-epidemic-algs-for-pubsub}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f1c14c0ca19e4cc3300e64955168d14f}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=da1f637aa6475c3bd5926c4954bedb08}{%
+           family={Migliavacca},
+           familyi={M\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d620f4adc6232b2b473645ce7fddf93}{%
+           family={Picco},
+           familyi={P\bibinitperiod},
+           given={Gian\bibnamedelima Pietro},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=44e80b9a48c397757a19a4ba5ae52484}{%
+           family={Cugola},
+           familyi={C\bibinitperiod},
+           given={Gianpaolo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=ea92f9ebc3ace54ebda154ff2ca3d7fc}{%
+           family={Jacobsen},
+           familyi={J\bibinitperiod},
+           given={Hans{-}Arno},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{fullhash}{733517b0ec5f5dae486c0351c9a3a193}
+      \strng{bibnamehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{authorbibnamehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{authornamehash}{149f02abecb53464b7219a040879f2e2}
+      \strng{authorfullhash}{733517b0ec5f5dae486c0351c9a3a193}
+      \strng{editorbibnamehash}{ea92f9ebc3ace54ebda154ff2ca3d7fc}
+      \strng{editornamehash}{ea92f9ebc3ace54ebda154ff2ca3d7fc}
+      \strng{editorfullhash}{ea92f9ebc3ace54ebda154ff2ca3d7fc}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2nd International Workshop on Distributed Event-Based Systems, {DEBS} 2003, Sunday, June 8th, 2003, San Diego, California, {USA} (in conjunction with {(SIGMOD/PODS)})}
+      \field{title}{Introducing reliability in content-based publish-subscribe through epidemic algorithms}
+      \field{year}{2003}
+      \verb{doi}
+      \verb 10.1145/966618.966629
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/966618.966629
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/966618.966629
+      \endverb
+    \endentry
+    \entry{tutorial-on-reliability-in-pubsub}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=53b49830a9d000f5096cd27a8279d6a0}{%
+           family={Esposito},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=662d9131115612bfce590b430e9006d8}{%
+           family={Bry},
+           familyi={B\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d12c3ac18bc495ad34b0fd1da5c92548}{%
+           family={Paschke},
+           familyi={P\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+        {{hash=114d652649a732dac58619b76d540fa5}{%
+           family={Eugster},
+           familyi={E\bibinitperiod},
+           given={Patrick\bibnamedelima Th.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=77595905360fbea5f67b2adf3f6dc019}{%
+           family={Fetzer},
+           familyi={F\bibinitperiod},
+           given={Christof},
+           giveni={C\bibinitperiod}}}%
+        {{hash=277a3d0c134fe0667d358561f945d2b8}{%
+           family={Behrend},
+           familyi={B\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{53b49830a9d000f5096cd27a8279d6a0}
+      \strng{fullhash}{53b49830a9d000f5096cd27a8279d6a0}
+      \strng{bibnamehash}{53b49830a9d000f5096cd27a8279d6a0}
+      \strng{authorbibnamehash}{53b49830a9d000f5096cd27a8279d6a0}
+      \strng{authornamehash}{53b49830a9d000f5096cd27a8279d6a0}
+      \strng{authorfullhash}{53b49830a9d000f5096cd27a8279d6a0}
+      \strng{editorbibnamehash}{8236be47f4268f7bd74630df73a06d33}
+      \strng{editornamehash}{8236be47f4268f7bd74630df73a06d33}
+      \strng{editorfullhash}{721d8215b29171ee7edd468879eb42ad}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Sixth {ACM} International Conference on Distributed Event-Based Systems, {DEBS} 2012, Berlin, Germany, July 16-20, 2012}
+      \field{title}{A tutorial on reliability in publish/subscribe services}
+      \field{year}{2012}
+      \field{pages}{399\bibrangedash 406}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/2335484.2335537
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2335484.2335537
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2335484.2335537
+      \endverb
+    \endentry
+    \entry{faces-of-pub-sub}{article}{}
+      \name{author}{4}{}{%
+        {{hash=114d652649a732dac58619b76d540fa5}{%
+           family={Eugster},
+           familyi={E\bibinitperiod},
+           given={Patrick\bibnamedelima Th.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6668285eef28becfbea5f2cf39c9dc7b}{%
+           family={Felber},
+           familyi={F\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d84b5e8da24c645eb6bc438af7621c4}{%
+           family={Guerraoui},
+           familyi={G\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+        {{hash=43b428701b71e726f0f4000ea91297c8}{%
+           family={Kermarrec},
+           familyi={K\bibinitperiod},
+           given={Anne{-}Marie},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a86d602e7957220bf8115648c1dd4ac}
+      \strng{fullhash}{c619f5fe1219739d761682fcaa0e4019}
+      \strng{bibnamehash}{3a86d602e7957220bf8115648c1dd4ac}
+      \strng{authorbibnamehash}{3a86d602e7957220bf8115648c1dd4ac}
+      \strng{authornamehash}{3a86d602e7957220bf8115648c1dd4ac}
+      \strng{authorfullhash}{c619f5fe1219739d761682fcaa0e4019}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{ACM} Comput. Surv.}
+      \field{number}{2}
+      \field{title}{The many faces of publish/subscribe}
+      \field{volume}{35}
+      \field{year}{2003}
+      \field{pages}{114\bibrangedash 131}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1145/857076.857078
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/857076.857078
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/857076.857078
+      \endverb
+    \endentry
+    \entry{linearizability-geeks}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e39b9c178b2c9be4e99b141d956c6ff6}{%
+           family={GeeksForGeeks},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e39b9c178b2c9be4e99b141d956c6ff6}
+      \strng{fullhash}{e39b9c178b2c9be4e99b141d956c6ff6}
+      \strng{bibnamehash}{e39b9c178b2c9be4e99b141d956c6ff6}
+      \strng{authorbibnamehash}{e39b9c178b2c9be4e99b141d956c6ff6}
+      \strng{authornamehash}{e39b9c178b2c9be4e99b141d956c6ff6}
+      \strng{authorfullhash}{e39b9c178b2c9be4e99b141d956c6ff6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Strict consistency or Linearizability in System Design}
+      \field{urlday}{4}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/strict-consistency-or-linearizability-in-system-design/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/strict-consistency-or-linearizability-in-system-design/
+      \endverb
+    \endentry
+    \entry{fault-tolerance-distributed-systems}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b58cf8ea7a6bb849225a95399c7d0f16}{%
+           family={Jalote},
+           familyi={J\bibinitperiod},
+           given={Pankaj},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{b58cf8ea7a6bb849225a95399c7d0f16}
+      \strng{fullhash}{b58cf8ea7a6bb849225a95399c7d0f16}
+      \strng{bibnamehash}{b58cf8ea7a6bb849225a95399c7d0f16}
+      \strng{authorbibnamehash}{b58cf8ea7a6bb849225a95399c7d0f16}
+      \strng{authornamehash}{b58cf8ea7a6bb849225a95399c7d0f16}
+      \strng{authorfullhash}{b58cf8ea7a6bb849225a95399c7d0f16}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-13-301367-2}
+      \field{title}{Fault tolerance in distributed systems}
+      \field{year}{1994}
+    \endentry
+    \entry{replication-state-of-the-art}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=d16056932a393b93367a5223974b55f6}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8a889f9e3406666d170bf952c28eccfc}{%
+           family={Vlassov},
+           familyi={V\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IEEE} Computer Society}%
+      }
+      \strng{namehash}{e62c5d0de96cc08f8504479d3268ea17}
+      \strng{fullhash}{e62c5d0de96cc08f8504479d3268ea17}
+      \strng{bibnamehash}{e62c5d0de96cc08f8504479d3268ea17}
+      \strng{authorbibnamehash}{e62c5d0de96cc08f8504479d3268ea17}
+      \strng{authornamehash}{e62c5d0de96cc08f8504479d3268ea17}
+      \strng{authorfullhash}{e62c5d0de96cc08f8504479d3268ea17}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery, CyberC 2013, Beijing, China, October 10-12, 2013}
+      \field{title}{Replication in Distributed Storage Systems: State of the Art, Possible Directions, and Open Issues}
+      \field{year}{2013}
+      \field{pages}{225\bibrangedash 232}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CyberC.2013.44
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/CyberC.2013.44
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/CyberC.2013.44
+      \endverb
+    \endentry
+    \entry{novathesis-manual}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=419e7851ce9e726652864635d63207af}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={João\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {NOVA University Lisbon}%
+      }
+      \strng{namehash}{419e7851ce9e726652864635d63207af}
+      \strng{fullhash}{419e7851ce9e726652864635d63207af}
+      \strng{bibnamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authorbibnamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authornamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authorfullhash}{419e7851ce9e726652864635d63207af}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The NOVAthesis \LaTeX{} Template User's Manual}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://github.com/joaomlourenco/novathesis/raw/main/template.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/joaomlourenco/novathesis/raw/main/template.pdf
+      \endverb
+      \keyw{novathesis-manual}
+    \endentry
+    \entry{large-content-based-pubsub-systems}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=df9ba6bfd7789dbff1951627b4feb1d3}{%
+           family={Mühl},
+           familyi={M\bibinitperiod},
+           given={Gero},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Darmstadt University of Technology, Germany}%
+      }
+      \strng{namehash}{df9ba6bfd7789dbff1951627b4feb1d3}
+      \strng{fullhash}{df9ba6bfd7789dbff1951627b4feb1d3}
+      \strng{bibnamehash}{df9ba6bfd7789dbff1951627b4feb1d3}
+      \strng{authorbibnamehash}{df9ba6bfd7789dbff1951627b4feb1d3}
+      \strng{authornamehash}{df9ba6bfd7789dbff1951627b4feb1d3}
+      \strng{authorfullhash}{df9ba6bfd7789dbff1951627b4feb1d3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Large-scale content based publish, subscribe systems}
+      \field{type}{phdthesis}
+      \field{year}{2002}
+      \verb{urlraw}
+      \verb http://elib.tu-darmstadt.de/diss/000274
+      \endverb
+      \verb{url}
+      \verb http://elib.tu-darmstadt.de/diss/000274
+      \endverb
+    \endentry
+    \entry{partial-replication}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a4c6240e2afc19489b65022fc9a2cc69}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={António\bibnamedelimb Luı́s\bibnamedelimb Pinto\bibnamedelima Ferreira},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=6db5d78ab1b4a7751b10f49a5277f166}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=86a14dfb1b71236207217ecec4a2acf1}{%
+           family={Moura},
+           familyi={M\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=98174a839e4f33b79cb4aa5cd9c3f30f}{%
+           family={Pedone},
+           familyi={P\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IEEE} Computer Society}%
+      }
+      \strng{namehash}{632bad54fdedc2f2711054ebe8b50332}
+      \strng{fullhash}{813aed06380dcafc7a38820d44f5ad8d}
+      \strng{bibnamehash}{632bad54fdedc2f2711054ebe8b50332}
+      \strng{authorbibnamehash}{632bad54fdedc2f2711054ebe8b50332}
+      \strng{authornamehash}{632bad54fdedc2f2711054ebe8b50332}
+      \strng{authorfullhash}{813aed06380dcafc7a38820d44f5ad8d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{IEEE} International Symposium on Network Computing and Applications {(NCA} 2001), October 8-10, 2001, Cambridge, MA, {USA}}
+      \field{title}{Partial Replication in the Database State Machine}
+      \field{year}{2001}
+      \field{pages}{298\bibrangedash 309}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/NCA.2001.962546
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/NCA.2001.962546
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/NCA.2001.962546
+      \endverb
+    \endentry
+    \entry{distributed-systems-principles-paradigms}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2414455c999bc471f803cd14fdea939d}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={Andrew\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7ef720d0b57800861b86b5ce45425837}{%
+           family={Steen},
+           familyi={S\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{725b361b521b2f1b1858b647cbe2cfcb}
+      \strng{fullhash}{725b361b521b2f1b1858b647cbe2cfcb}
+      \strng{bibnamehash}{725b361b521b2f1b1858b647cbe2cfcb}
+      \strng{authorbibnamehash}{725b361b521b2f1b1858b647cbe2cfcb}
+      \strng{authornamehash}{725b361b521b2f1b1858b647cbe2cfcb}
+      \strng{authorfullhash}{725b361b521b2f1b1858b647cbe2cfcb}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-13-239227-3}
+      \field{title}{Distributed systems - principles and paradigms, 2nd Edition}
+      \field{year}{2007}
+    \endentry
+    \entry{pubsub-systems-book}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e935e5d3dbf7bbbe18aab2f618b1b740}{%
+           family={Tarkoma},
+           familyi={T\bibinitperiod},
+           given={Sasu},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{e935e5d3dbf7bbbe18aab2f618b1b740}
+      \strng{fullhash}{e935e5d3dbf7bbbe18aab2f618b1b740}
+      \strng{bibnamehash}{e935e5d3dbf7bbbe18aab2f618b1b740}
+      \strng{authorbibnamehash}{e935e5d3dbf7bbbe18aab2f618b1b740}
+      \strng{authornamehash}{e935e5d3dbf7bbbe18aab2f618b1b740}
+      \strng{authorfullhash}{e935e5d3dbf7bbbe18aab2f618b1b740}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Publish/subscribe systems: design and principles}
+      \field{year}{2012}
+    \endentry
+  \enddatalist
+  \missing{Artho03}
+  \missing{Artho04}
+  \missing{Beckman08}
+  \missing{Flanagan04}
+  \missing{IBM-Rep}
+  \missing{Praun03}
+\endrefsection
+
+\refsection{1}
+  \datalist[entry]{nty/global//global/global}
+    \entry{novathesis-manual}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=419e7851ce9e726652864635d63207af}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={João\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {NOVA University Lisbon}%
+      }
+      \strng{namehash}{419e7851ce9e726652864635d63207af}
+      \strng{fullhash}{419e7851ce9e726652864635d63207af}
+      \strng{bibnamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authorbibnamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authornamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authorfullhash}{419e7851ce9e726652864635d63207af}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The NOVAthesis \LaTeX{} Template User's Manual}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://github.com/joaomlourenco/novathesis/raw/main/template.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/joaomlourenco/novathesis/raw/main/template.pdf
+      \endverb
+      \keyw{novathesis-manual}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
