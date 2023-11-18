@@ -206,15 +206,23 @@ The second and third algorithms use a strategy based on \textit{pull} gossip. Th
 
 \subsubsection{MinAvg-kTCO}
 
+In the paper \cite{minavg-k-tco}, the authors propose the \textit{MivAvg-kTCO} problem parameterized by \textit{k} to use the minimum number of edges to create a \textit{k-topic-connected overlay ({kTCO})} for \gls{pubsub} systems.
+
+A \textit{topic connected overlay (TCO)} is a per-topic connected graph of nodes subscribed to the topic, where exists a path between each pair nodes without being directly connected. Using \textit{TCOs} guarantees that nodes not interested in that topic, do not contribute to disseminate information on that topic. The downside of \textit{TCOs} is that connectivity is not guaranteed even if a single node fails. To address this issue, the authors introduce \textit{k-topic-connected-overlay (kTCO)} which guarantee connectivity if fewer than \textit{k} nodes fail simultaneously for the same topic.
+
+The authors conclude the paper by presenting two algorithms that solve the \textit{MivAvg-kTCO} problem: GM\textit{2} to build \textit{2}TCOs and Harary-Per-Topic (HPT) to build \textit{k}TCOs where \textit{k} is greather than 2.
+
 \subsubsection{Reliable and Highly Available Distributed Publish/Subscribe Service}
-%\subsubsection{Scribe}
 
-%\textit{Scribe}~\cite{scribe} is an application-layer multicast infrastructure built on top of \textit{Pastry}, a self-organizing overlay network of nodes. \textit{Scribe} nodes can create and join multicast groups to propagate messages to other nodes. This protocol provides a best-effort delivery of messages, and specifies no particular delivery order by relying on TCP connections to reliably disseminate messages. Some systems might require stronger reliability guarantees, therefore, Scribe provides the framework for developers to implement stronger reliability guarantees.
+In \cite{reliable-highly-available-pub-sub}, the authors present a system that uses a topology management and subscription propagation scheme that enables brokers to compute new forwarding paths when failures of nearby neighbors occur.
 
-%\subsubsection{P2S}
+The systems relies on a tree-based overlay, in which brokers maintain a partial view of this tree which includes all brokers within distance \textit{f+1}, where \textit{f} is the maximum number of concurrent broker failures that the algorithm tolerates. Such information is stored locally by each broker in a data structure called the  topology map.
 
-%\textit{P2S}~\cite{p2s} is a crash-tolerant, topic-based pub/sub middleware, that replicates the broker using \textit{Goxos}, a Go implementation of \textit{Paxos}. \textit{Paxos} is a fault-tolerant consensus protocol, in which replicas try to reach agreement on a value. This protocol, provides strong consistency because replicas only agree on a value in case at least, \textit{f}+1 replicas accept a value proposed by another replica, where \textit{f} is the number of faults that can be tolerated. A big advantage of \textit{Paxos} is that if at least \textit{f} replicas fail, it will not make progress since it can not reach consensus on a value and, therefore, it ensures strong consistency among replicas. In \textit{P2S}, client requests are treated as \textit{Paxos} proposals, thus every request is disseminated to every other replica to achieve consensus. After reaching consensus, brokers can forward the messages to all subscribers subscribed to the message topic. To address broker failures, \textit{P2S} relies on a set of 2\textit{f}+1 replicated brokers between publishers and subscribers, where up to \textit{f} brokers can fail.
+Brokers also maintain a subscription table containing entries for subscriptions inserted into the system. Subscriptions contain a \textit{from} field that points to another broker located \textit{f+1} hops closer to the subscriber. In the event of failure of one or more neighbors, the broker uses this information and its topology map to reconnect the network topology, and forward publications over new paths towards matching subscribers.
 
+Finally, the algorithm contains a recovery procedure used by failed brokers to re-enter the system. This procedure aims at restoring a broker's routing information according to the current state of the network and is divided in three phases: \textit{synchronization}, \textit{message forwarding} and \textit{termination of recovery}.  
+
+\subsubsection{Fault-Tolerant Reliable Delivery of Messages in Distributed Publish/Subscribe Systems}
 
 
 
