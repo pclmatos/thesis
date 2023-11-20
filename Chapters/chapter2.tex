@@ -184,6 +184,7 @@ In \cite{tutorial-on-reliability-in-pubsub}, the authors highlight some techniqu
 The following sections go over some approaches taken by researchers to address the reliability problem of \gls{pubsub} systems.
 
 \subsubsection{P2S}
+\label{sec:p2s}
 
 P2S \cite{p2s}, is a topic-based and crash-tolerant \textit{Paxos}-based \gls{pubsub} middleware based on Goxos, a \textit{Paxos}-based State Machine Replication framework. Paxos is a fault-tolerant consensus protocol in which a set of replicas tries to reach agreement on a value. With this protocol, replicas can reach agreement when at least \textit{f+1} replicas are able to communicate, where \textit{f} is the number of failures the system can tolerate.
 
@@ -192,6 +193,7 @@ This system leverages Paxos as a way to achieve total message ordering, while pr
 In this system, client messages are handled by the Goxos framework. When clients send messages, Goxos treats them as Paxos requests, orders and delivers them to the broker application layer, which forwards the messages to the subscribers according to the message topic.
 
 \subsubsection{Epidemic Algorithms for Reliable Content-Based Publish-Subscribe: An Evaluation}
+\label{sec:reliable_gossip}
 
 In the papers \cite{epidemic-algs-for-pubsub} and \cite{intro-epidemic-algs-for-pubsub}, the authors approach reliability by relying in gossip (or epidemic) algorithms to improve reliability in content-based \gls{pubsub} systems and propose three algorithms based on different gossip strategies.
 
@@ -205,6 +207,7 @@ The second and third algorithms use a strategy based on \textit{pull} gossip. Th
 
 
 \subsubsection{MinAvg-kTCO}
+\label{sec:minavg_tco}
 
 In the paper \cite{minavg-k-tco}, the authors propose the \textit{MivAvg-kTCO} problem parameterized by \textit{k} to use the minimum number of edges to create a \textit{k-topic-connected overlay ({kTCO})} for \gls{pubsub} systems.
 
@@ -223,8 +226,21 @@ Brokers also maintain a subscription table containing entries for subscriptions 
 Finally, the algorithm contains a recovery procedure used by failed brokers to re-enter the system. This procedure aims at restoring a broker's routing information according to the current state of the network and is divided in three phases: \textit{synchronization}, \textit{message forwarding} and \textit{termination of recovery}.  
 
 \subsubsection{Fault-Tolerant Reliable Delivery of Messages in Distributed Publish/Subscribe Systems}
+\label{sec:fault_tolerant_reliable_delivery}
 
+In \cite{repository-nodes}, the authors present a gossip-based approach to reliable delivery of messages over a reliable-topic, that relies on a special kind of node, which manages a set of reliable-topics, called \textit{repository} node. The \textit{repository} facilitates reliable delivery from multiple publishers to multiple subribers. Managing a reliable-topic involves two key components:
+\begin{enumerate}
+  \item The \textit{repository} should facilitate the registration and de-registration of authorized entities for reliable communications; and
+  \item The \textit{repository} must support error-corrections, retransmissions and recovery from failures.
+\end{enumerate}
 
+Reliable delivery of messages also involves two key aspects:
+\begin{enumerate}
+  \item The \textit{repository} needs to ensure that messages published by the publisher, over a reliable-topic are stored exactly-once, without gaps and in order at the repository managing this reliable-topic; and
+  \item The \textit{repository} has to compute the intended destinations and ensure the reliable delivery of the stored message to the computed destinations.
+\end{enumerate}
+
+The authors found that the use of a \textit{repository} node, to manage reliable-topics, would result in clients having to wait for the \textit{repository} to recover in case of failures, therefore becoming a single point of failure. To address this issue, each reliable-topic is managed by a set of \textit{repositories}, called a \textit{repository bundle}. Every \textit{repository} inside a \textit{repository bundle}, must manage the same reliable-topics. This solution provides redundancy, high-availability and more fault-tolerance.
 
 \section{Example glossary, acronyms, and symbols}
 %
