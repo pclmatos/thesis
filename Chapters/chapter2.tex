@@ -169,7 +169,7 @@ In the context of distributed \gls{pubsub} systems, it is often necessary to pro
 Moreover, we should also take into account that brokers might eventually fail and, therefore, system's need to implement mechanisms to detect such failures and recover from them.
 
 
-In \cite{tutorial-on-reliability-in-pubsub}, the authors highlight some techniques and approaches that have been taken by current implementations:
+In ~\cite{tutorial-on-reliability-in-pubsub}, the authors highlight some techniques and approaches that have been taken by current implementations:
 
 \begin{itemize}
   \item \textbf{Planning}: estimate the reliability level of several paths from a source to a destination, and pick the one that exposes the highest reliability. This mainly aims at avoiding faults as much as possile;
@@ -186,7 +186,7 @@ The following sections go over some approaches taken by researchers to address t
 \subsubsection{Epidemic Algorithms for Reliable Content-Based Publish-Subscribe: An Evaluation}
 \label{sec:reliable_gossip}
 
-In the papers \cite{epidemic-algs-for-pubsub} and \cite{intro-epidemic-algs-for-pubsub}, the authors approach reliability by relying in gossip (or epidemic) algorithms to improve reliability in content-based \gls{pubsub} systems and propose three algorithms based on different gossip strategies.
+In the papers ~\cite{epidemic-algs-for-pubsub} and ~\cite{intro-epidemic-algs-for-pubsub}, the authors approach reliability by relying in gossip (or epidemic) algorithms to improve reliability in content-based \gls{pubsub} systems and propose three algorithms based on different gossip strategies.
 
 Unlike topic-based \gls{pubsub} where topic subscriptions define a group of receivers and messages within a topic can be assigned a sequence number to easily detect losses, patterns in content-based \gls{pubsub} do not have the same effect. This is mainly linked to the fact that events can match multiple patterns resulting in routing being performed independently and messages not getting assigned a sequence number. The authors identify the previous problems as the main challenges that have to be addressed when applying reliability to content-based \gls{pubsub}
 
@@ -199,7 +199,7 @@ The second and third algorithms use a strategy based on \textit{pull} gossip. Th
 \subsubsection{Fault-Tolerant Reliable Delivery of Messages in Distributed Publish/Subscribe Systems}
 \label{sec:fault_tolerant_reliable_delivery}
 
-In \cite{repository-nodes}, the authors present a gossip-based approach to reliable delivery of messages over a reliable-topic, that relies on a special kind of node, which manages a set of reliable-topics, called \textit{repository} node. The \textit{repository} facilitates reliable delivery from multiple publishers to multiple subscribers. Managing a reliable-topic involves two key components:
+In ~\cite{repository-nodes}, the authors present a gossip-based approach to reliable delivery of messages over a reliable-topic, that relies on a special kind of node, which manages a set of reliable-topics, called \textit{repository} node. The \textit{repository} facilitates reliable delivery from multiple publishers to multiple subscribers. Managing a reliable-topic involves two key components:
 \begin{enumerate}
   \item The \textit{repository} should facilitate the registration and de-registration of authorized entities for reliable communications; and
   \item The \textit{repository} must support error-corrections, retransmissions and recovery from failures.
@@ -216,7 +216,7 @@ The authors found that the use of a \textit{repository} node, to manage reliable
 \subsubsection{Reliable and Highly Available Distributed Publish/Subscribe Service}
 \label{sec:reliable_and_highly_available_distributed_pubsub}
 
-In \cite{reliable-highly-available-pub-sub}, the authors present a system that uses a topology management and subscription propagation scheme that enables brokers to compute new forwarding paths when failures of nearby neighbors occur.
+In ~\cite{reliable-highly-available-pub-sub}, the authors present a system that uses a topology management and subscription propagation scheme that enables brokers to compute new forwarding paths when failures of nearby neighbors occur.
 
 The systems relies on a tree-based overlay, in which brokers maintain a partial view of this tree which includes all brokers within distance \textit{f+1}, where \textit{f} is the maximum number of concurrent broker failures that the algorithm tolerates. Such information is stored locally by each broker in a data structure called the  topology map.
 
@@ -227,7 +227,7 @@ Finally, the algorithm contains a recovery procedure used by failed brokers to r
 \subsubsection{MinAvg-kTCO}
 \label{sec:minavg_tco}
 
-In the paper \cite{minavg-k-tco}, the authors propose the \textit{MivAvg-kTCO} problem parameterized by \textit{k} to use the minimum number of edges to create a \textit{k-topic-connected overlay ({kTCO})} for \gls{pubsub} systems.
+In the paper ~\cite{minavg-k-tco}, the authors propose the \textit{MivAvg-kTCO} problem parameterized by \textit{k} to use the minimum number of edges to create a \textit{k-topic-connected overlay ({kTCO})} for \gls{pubsub} systems.
 
 A \textit{topic connected overlay (TCO)} is a per-topic connected graph of nodes subscribed to the topic, where exists a path between each pair nodes without being directly connected. Using \textit{TCOs} guarantees that nodes not interested in that topic, do not contribute to disseminate information on that topic. The downside of \textit{TCOs} is that connectivity is not guaranteed even if a single node fails. To address this issue, the authors introduce \textit{k-topic-connected-overlay (kTCO)} which guarantee connectivity if fewer than \textit{k} nodes fail simultaneously for the same topic.
 
@@ -236,11 +236,41 @@ The authors conclude the paper by presenting two algorithms that solve the \text
 \subsubsection{P2S}
 \label{sec:p2s}
 
-P2S \cite{p2s}, is a topic-based and crash-tolerant \textit{Paxos}-based \gls{pubsub} middleware based on Goxos, a \textit{Paxos}-based State Machine Replication framework. Paxos is a fault-tolerant consensus protocol in which a set of replicas tries to reach agreement on a value. With this protocol, replicas can reach agreement when at least \textit{f+1} replicas are able to communicate, where \textit{f} is the number of failures the system can tolerate.
+P2S ~\cite{p2s}, is a topic-based and crash-tolerant \textit{Paxos}-based \gls{pubsub} middleware based on Goxos, a \textit{Paxos}-based State Machine Replication framework. Paxos is a fault-tolerant consensus protocol in which a set of replicas tries to reach agreement on a value. With this protocol, replicas can reach agreement when at least \textit{f+1} replicas are able to communicate, where \textit{f} is the number of failures the system can tolerate.
 
 This system leverages Paxos as a way to achieve total message ordering, while providing a mechanism to tolerate broker failures. For that purpose, P2S relies on a set of \textit{2f+1} brokers between publishers and subscribers. With this design, P2S is able to provide fault-tolerance through replication while providing total ordering through Paxos.
 
 In this system, client messages are handled by the Goxos framework. When clients send messages, Goxos treats them as Paxos requests, orders and delivers them to the broker application layer, which forwards the messages to the subscribers according to the message topic.
+
+\newpage
+
+\begin{sidewaystable}
+\small
+\rowcolors{1}{}{GhostWhite}
+\begin{xltabular}{\textwidth}{Xcccccccc}
+  \caption{Solution properties.}
+  \label{tab:solution_properties}\\
+  \toprule
+  \rowcolor{Gainsboro}
+  System & Topology & Delivery Guarantees & Ordering Guarantees & Fault-tolerance & How& Details & Requirements\\
+  \midrule
+  ~\ref{sec:reliable_and_highly_available_distributed_pubsub} & Tree & Exactly-once & FIFO & \checkmark & Redundant Edges & Partial view & asdasd\\
+  P2S~\cite{p2s} & Star & X & Total & \checkmark & Paxos & Replicates broker & 2f+1 replicas\\
+\end{xltabular}%
+\end{sidewaystable}
+
+\newpage%
+%\begin{tabularx}{\textwidth}{ 
+%  | >{\raggedright\arraybackslash}X 
+%  | >{\centering\arraybackslash}X 
+%  | >{\raggedleft\arraybackslash}X | }
+%  \caption{Properties of presented solutions}
+%  \label{tab:solution_properties}\\
+%  \hline
+%  System& Topology& Delivery Guarantees& Ordering Guarantees& Fault-tolerance& How& Details\\
+%  \hline
+%  P2S& star& X& T& Total& Paxos& Replcating the broker& To tolerate failures of f+1 replicas requires 2f+1 nodes\\
+%\end{tabularx}
 
 \section{Example glossary, acronyms, and symbols}
 %
