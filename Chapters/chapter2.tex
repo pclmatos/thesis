@@ -160,16 +160,37 @@ As stated in~\cite{faces-of-pub-sub}, the concept of topics is similar to the co
 \subsection{Reliable Publish/Subscribe Systems}
 \label{sec:reliable_pub_sub_systems}
 
-When dealing with distributed systems, it is generally required to add components to systems due to higher service demands. However, the more components a system is composed of, the more complex it becomes and the probability of components failing also increases. Crashed processes, machine malfunctions, network failures and faulty processes are some of common faults that can occur in a system~\cite{fault-tolerance-distributed-systems}. 
+When dealing with distributed systems, it is generally required to add components to systems due to higher service demands and geographical positioning of clients. However, the more components a system is composed of, the more complex it becomes and the probability of components failing also increases.
+
+In general, in distributed systems, \textbf{faults} can be defined as the deviation of a component from it's correct behavior. In order to develop a reliable system, it is important to make assumptions about how a process might fail. Therefore, it is of extreme importance to define a fault model. Table~\ref{tab:fault_models} presents some of the most commom fault models considered in existing systems.
+
+\begin{table}[H]
+\rowcolors{1}{}{GhostWhite}
+\begin{xltabular}{\textwidth}{cX}
+  \caption{Fault models based on~\cite{fault-tolerance-distributed-systems}.}
+  \label{tab:fault_models}\\
+  \toprule
+  \rowcolor{Gainsboro}
+  Type & Description\\
+  \midrule
+  Crash Model & When a process fails it stops sending messages\\
+  \hline
+  Omission Model & After failing a process omits the trasmission or reception of any number of messages\\
+  \hline
+  Fail-Stop Model & Upon failure, the process "notifies" all other processes of its own failure and then stops sending messages\\
+  \hline
+  Byzantine Model & A process might deviate from its behavior in an arbitrary way\\
+  \bottomrule
+\end{xltabular}
+\end{table}
 
 Detecting failures can seem to be a trivial task, however when dealing with very wide systems, it might present itself as a bigger challenge. Therefore, it is important to design robust systems and algorithms able to guarantee the correct behavior of correctly operating processes, in the presence of such failures. 
 
-In the context of distributed \gls{pubsub} systems, it is often necessary to provide strong guarantees about the reliable delivery of information. This is mainly due to publishers and subscribers being decoupled as mentioned in section \ref{sec:pub_sub} . Systems can rely, for example, on overlay networks of distributed brokers or group communication and reliable application-layer multicast, such as Scribe~\cite{scribe}, to propagate messages between brokers and from publishers to subscribers~\cite{faces-of-pub-sub}.
+In the context of distributed \gls{pubsub} systems, it is often necessary to provide strong guarantees about the reliable delivery of information. This is mainly due to publishers and subscribers being decoupled as mentioned in section \ref{sec:pub_sub}. Systems can rely, for example, on overlay networks of distributed brokers or group communication and reliable application-layer multicast, such as Scribe~\cite{scribe}, to propagate messages between brokers and from publishers to subscribers~\cite{faces-of-pub-sub}.
 
 Moreover, we should also take into account that brokers might eventually fail and, therefore, system's need to implement mechanisms to detect such failures and recover from them.
 
-
-In ~\cite{tutorial-on-reliability-in-pubsub}, the authors highlight some techniques and approaches that have been taken by current implementations:
+In ~\cite{tutorial-on-reliability-in-pubsub}, the authors highlight some techniques and strategies that have been adopted by current implementations:
 
 \begin{itemize}
   \item \textbf{Planning}: estimate the reliability level of several paths from a source to a destination, and pick the one that exposes the highest reliability. This mainly aims at avoiding faults as much as possile;
@@ -236,30 +257,31 @@ The authors conclude the paper by presenting two algorithms that solve the \text
 \subsubsection{P2S}
 \label{sec:p2s}
 
-P2S ~\cite{p2s}, is a topic-based and crash-tolerant \textit{Paxos}-based \gls{pubsub} middleware based on Goxos, a \textit{Paxos}-based State Machine Replication framework. Paxos is a fault-tolerant consensus protocol in which a set of replicas tries to reach agreement on a value. With this protocol, replicas can reach agreement when at least \textit{f+1} replicas are able to communicate, where \textit{f} is the number of failures the system can tolerate.
+P2S~\cite{p2s}, is a topic-based and crash-tolerant \textit{Paxos}-based \gls{pubsub} middleware based on Goxos, a \textit{Paxos}-based State Machine Replication framework. Paxos is a fault-tolerant consensus protocol in which a set of replicas tries to reach agreement on a value. With this protocol, replicas can reach agreement when at least \textit{f+1} replicas are able to communicate, where \textit{f} is the number of failures the system can tolerate.
 
 This system leverages Paxos as a way to achieve total message ordering, while providing a mechanism to tolerate broker failures. For that purpose, P2S relies on a set of \textit{2f+1} brokers between publishers and subscribers. With this design, P2S is able to provide fault-tolerance through replication while providing total ordering through Paxos.
 
 In this system, client messages are handled by the Goxos framework. When clients send messages, Goxos treats them as Paxos requests, orders and delivers them to the broker application layer, which forwards the messages to the subscribers according to the message topic.
 
-\newpage
+%\newpage
 
 \begin{sidewaystable}
+%\begin{table}
 \small
 \rowcolors{1}{}{GhostWhite}
-\begin{xltabular}{\textwidth}{Xcccccccc}
+\begin{xltabular}{\textwidth}{cccccccX}
   \caption{Solution properties.}
   \label{tab:solution_properties}\\
   \toprule
   \rowcolor{Gainsboro}
-  System & Topology & Delivery Guarantees & Ordering Guarantees & Fault-tolerance & How& Details & Requirements\\
+  System & Topology & Delivery & Ordering & Fault-tolerance & Strategy & Details & Requirements\\
   \midrule
-  ~\ref{sec:reliable_and_highly_available_distributed_pubsub} & Tree & Exactly-once & FIFO & \checkmark & Redundant Edges & Partial view & asdasd\\
-  P2S~\cite{p2s} & Star & X & Total & \checkmark & Paxos & Replicates broker & 2f+1 replicas\\
+  ~\ref{sec:reliable_and_highly_available_distributed_pubsub} & Tree & Exactly-once & FIFO & \checkmark & Redundant Edges & Partial view & Each broker maintains in its partial view all replicas within $\delta$+1 distance, where $\delta$ is the number of faults to tolerate\\
+  P2S~\cite{p2s} & Star & X & Total & \checkmark & Paxos & Replicates broker & 2f+1 replicas, where f is the number of faults to tolerate\\
 \end{xltabular}%
+%\end{table}
 \end{sidewaystable}
 
-\newpage%
 %\begin{tabularx}{\textwidth}{ 
 %  | >{\raggedright\arraybackslash}X 
 %  | >{\centering\arraybackslash}X 
