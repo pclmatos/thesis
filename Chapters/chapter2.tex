@@ -162,12 +162,12 @@ As stated in~\cite{faces-of-pub-sub}, the concept of topics is similar to the co
 
 When dealing with distributed systems, it is generally required to add components to systems due to higher service demands and geographical positioning of clients. However, the more components a system is composed of, the more complex it becomes and the probability of components failing also increases.
 
-In general, in distributed systems, \textbf{faults} can be defined as the deviation of a component from it's correct behavior. In order to develop a reliable system, it is important to make assumptions about how a process might fail. Therefore, it is of extreme importance to define a fault model. Table~\ref{tab:fault_models} presents some of the most commom fault models considered in existing systems.
+In general, in distributed systems, \textbf{faults} can be defined as the deviation of a component from it's correct behavior. In order to develop a reliable system, it is important to make assumptions about how a process might fail. Therefore, it is of extreme importance to define a fault model.
 
 \begin{table}[H]
 \rowcolors{1}{}{GhostWhite}
 \begin{xltabular}{\textwidth}{cX}
-  \caption{Fault models based on~\cite{fault-tolerance-distributed-systems}.}
+  \caption{Process fault models based on~\cite{fault-tolerance-distributed-systems}.}
   \label{tab:fault_models}\\
   \toprule
   \rowcolor{Gainsboro}
@@ -175,14 +175,32 @@ In general, in distributed systems, \textbf{faults} can be defined as the deviat
   \midrule
   Crash Model & When a process fails it stops sending messages\\
   \hline
-  Omission Model & After failing a process omits the trasmission or reception of any number of messages\\
+  Omission Model & After failing, a process omits the trasmission or reception of any number of messages\\
   \hline
-  Fail-Stop Model & Upon failure, the process "notifies" all other processes of its own failure and then stops sending messages\\
+  Fail-Stop Model & Upon failure, the process "notifies" all other processes of its own failure and stops sending messages\\
   \hline
   Byzantine Model & A process might deviate from its behavior in an arbitrary way\\
   \bottomrule
 \end{xltabular}
 \end{table}
+
+Table~\ref{tab:fault_models} displays some of the most common process failures that can be observed in systems. However, a system also requires the presence of a network, which enables communication between processes. Such network is also prone to failures.
+
+\begin{table}[H]
+  \rowcolors{1}{}{GhostWhite}
+  \begin{xltabular}{\textwidth}{cX}
+    \caption{Network failures}
+    \label{tab:network_failures}\\
+    \toprule
+    \rowcolor{Gainsboro}
+    Failure & Description\\
+    \midrule
+    Link Failure & Links between processes become unavailable\\
+    \hline
+    Message Loss & Messages sent from a process to another might get lost for non-deterministic reasons\\
+    \bottomrule
+  \end{xltabular}
+  \end{table}
 
 Detecting failures can seem to be a trivial task, however when dealing with very wide systems, it might present itself as a bigger challenge. Therefore, it is important to design robust systems and algorithms able to guarantee the correct behavior of correctly operating processes, in the presence of such failures. 
 
