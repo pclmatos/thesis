@@ -184,23 +184,25 @@ In general, in distributed systems, \textbf{faults} can be defined as the deviat
 \end{xltabular}
 \end{table}
 
-Table~\ref{tab:fault_models} displays some of the most common process failures that can be observed in systems. However, a system also requires the presence of a network, which enables communication between processes. Such network is also prone to failures.
+Table~\ref{tab:fault_models} displays some of the most common process failures that can be observed in systems. However, a system also requires the presence of a network, which enables communication between processes but is also prone to failures.
 
-\begin{table}[H]
-  \rowcolors{1}{}{GhostWhite}
-  \begin{xltabular}{\textwidth}{cX}
-    \caption{Network failures}
-    \label{tab:network_failures}\\
-    \toprule
-    \rowcolor{Gainsboro}
-    Failure & Description\\
-    \midrule
-    Link Failure & Links between processes become unavailable\\
-    \hline
-    Message Loss & Messages sent from a process to another might get lost for non-deterministic reasons\\
-    \bottomrule
-  \end{xltabular}
-  \end{table}
+% \begin{table}[H]
+%   \rowcolors{1}{}{GhostWhite}
+%   \begin{xltabular}{\textwidth}{cX}
+%     \caption{Network failures}
+%     \label{tab:network_failures}\\
+%     \toprule
+%     \rowcolor{Gainsboro}
+%     Failure & Description\\
+%     \midrule
+%     Link Failure & Links between processes become unavailable\\
+%     \hline
+%     Device Failure & Ne
+%     \hline
+%     Message Loss & Messages sent from a process to another might get lost for non-deterministic reasons\\
+%     \bottomrule
+%   \end{xltabular}
+%   \end{table}
 
 Detecting failures can seem to be a trivial task, however when dealing with very wide systems, it might present itself as a bigger challenge. Therefore, it is important to design robust systems and algorithms able to guarantee the correct behavior of correctly operating processes, in the presence of such failures. 
 
